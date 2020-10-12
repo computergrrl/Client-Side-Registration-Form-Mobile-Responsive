@@ -17,14 +17,15 @@
         <h2>Sign up for our newsletter.</h2>
         <p>Get the latest news on how your code is doing right to your inbox.</p> 
         <hr>
-        <h2>Contact Information</h1>
-            <form class="form-container">
+        <hr>
+        <form class="form-container">
+          <h2>Contact Information</h1>
                 <label for="name">Full Name</label>
                 <input id="name" name="user_name" type="text">
                 <label for="email">Email Address</label>
-                <input id="email" name="user_email" type="text">
+                <input id="email" name="user_email" type="email">
                 <label for="phone">Phone Number</label>
-                <input id="phone" name="user_phone" type="text">
+                <input id="phone" name="user_phone" type="tel">
                 <label for="address">Street Address</label>
                 <input id="address" name="user_address" type="text">
                 <label for="city">City</label>
@@ -88,12 +89,16 @@
                   <hr>
                 <h2>Newsletter</h2>
                 <p>Select the newsletters you'd like to receive:</p>
-                  <input type="checkbox" name="newsChoose" value="HTML-News" checked="true">HTML News
-                  <input type="checkbox" name="newsChoose" value="CSS-News">CSS News
-                  <input type="checkbox" name="newsChoose" value="JS-News">JavaScript News
+                  <label for="html_news"><input type="checkbox" id="html_news" name="newsChoose" value="HTML-News" checked="true">HTML News</label>
+
+                  <label for="css_news"><input type="checkbox" id="css_news" name="newsChoose" value="CSS-News">CSS News</label>
+
+                  <label for="js_news"><input type="checkbox" id="js_news" name="newsChoose" value="JS-News">JavaScript News</label>
+
                 <p>Newsletter Format </p>
-                  <input type="radio" name="format" checked="true" value="HTML">HTML
-                  <input type="radio" name="format" value="text">Plain Text
+                  <label for="HTML"><input type="radio" id="HTML" name="format" checked="true" value="HTML">HTML</label>
+
+                  <label for="plain_text"><input type="radio" id="plain_text" name="format" value="text">Plain Text</label>
                 <p>Other topics you'd like to hear about</p>
                   <textarea name="other"></textarea>
 
