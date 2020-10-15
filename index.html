@@ -23,9 +23,10 @@
       
       <div class="form-container">
         <form>
-          <h2>Contact Information</h1>
+          <fieldset>
+          <legend>Contact Information</legend>
             <label for="name">Full Name</label>
-            <input id="name" name="user_name" type="text">
+            <input id="name" name="user_name" type="text" placeholder="Required">
             <label for="email">Email Address</label>
             <input id="email" name="user_email" type="email">
             <label for="phone">Phone Number</label>
@@ -90,6 +91,7 @@
               </select>
               <label for="zip">Zip Code</label>
               <input id="zip" name="user_zip" type="text">
+            </fieldset>
               <hr>
             <h2>Newsletter</h2>
             <p>Select the newsletters you'd like to receive:</p>
@@ -103,11 +105,13 @@
               <label for="HTML"><input type="radio" id="HTML" name="format" checked="true" value="HTML">HTML</label>
 
               <label for="plain_text"><input type="radio" id="plain_text" name="format" value="text">Plain Text</label>
-            <p>Other topics you'd like to hear about</p>
+
               <label for="other">Other topics you'd like to hear about</label>
               <textarea id="other" name="other_comments"></textarea>
             
-            <button type="submit">Sign Up</button>
+              <button type="submit">Sign Up</button>
+
+            <p><em>Copyright 2020 The Code Review</em></p>
 
 
         </form>

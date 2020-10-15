@@ -6,6 +6,7 @@
 body {
     font-family: 'Merriweather', serif;
 }
+
 /*****************************************
 Header Content
 ******************************************/
@@ -38,6 +39,23 @@ Main form styling
     margin: auto;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    width: 100%;
+    /* border: 0; */
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -53,6 +71,7 @@ select {
   background-color: #ececec;
   color: #8a97a0;
   margin-bottom: 30px;
+  text-align: right;
 }
 
 input[type="radio"],
