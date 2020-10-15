@@ -7,13 +7,28 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+label {
+    color: rgb(45, 57, 69);
+}
 /*****************************************
 Header Content
 ******************************************/
 
+.hr1 {
+    border: 2px solid rgb(45, 57, 69);
+    width: 290px;
+    margin-bottom: 4px;
+}
+
+.hr2 {
+    border: 1px solid rgb(45, 57, 69);
+    width: 290px;
+    margin-top: 4px;
+}
+
 header h2 {
     text-transform: uppercase;
-    background-color:#324461;
+    background-color:rgb(45, 57, 69);
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -28,32 +43,38 @@ header h3 {
 
 }
 
-/*********************************
-Main form styling
-**********************************/
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
+header p {
+    color: rgb(190, 194, 197);
+    width: 86%;
     margin: auto;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+    
 }
 
-form {
+/*********************************
+Form - Contact Info Section
+**********************************/
+
+.form-top {
     display: flex;
     flex-direction: column;
+    /* width: 85%; */
+    margin: auto;
 }
 
 fieldset {
     width: 100%;
-    /* border: 0; */
+    border: 0;
 }
 
 legend {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.3em;
+    font-weight: bolder;
     text-align: left;
     margin-bottom: 10px;
+    padding-left: 0;
 }
 
 input[type="text"],
@@ -61,34 +82,67 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
-  height: auto;
+  height: 50px;
   margin-top: 8px;
   padding: 15px;
   width: 100%;
-  background-color: #ececec;
+  background-color: rgb(239, 240, 241);
   color: #8a97a0;
   margin-bottom: 30px;
-  text-align: right;
 }
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: rgb(179, 184, 187);
+    padding-right: 5px;
+
+}
+
+/******************************
+Form - Newsletter Section
+******************************/
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: flex-end;
+}
+
 
 input[type="radio"],
 input[type="checkbox"] {
   margin: 8px;
-  display: inline-block;
+  /* display: inline-block; */
 
 }
 
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
 button {
-    /* text-align: center; */
-    display: block;
-    margin: auto;
-    width: 90%;
-    height: 50px;
+    /* display: block;
+    margin: auto; */
+    align-self: center;
+    width: 290px;
+    height: 60px;
     background-color: #30c7b3;
     color: #fff;
     font-weight: 900;
     border: 0;
 } 
+
+.copy {
+    text-align: center;
+    color: #adadad;
+    font-size: 12px;
+}
