@@ -10,23 +10,11 @@ body {
 label {
     color: rgb(45, 57, 69);
 }
+
 /*****************************************
 Header Content
 ******************************************/
-
-.hr1 {
-    border: 2px solid rgb(45, 57, 69);
-    width: 290px;
-    margin-bottom: 4px;
-}
-
-.hr2 {
-    border: 1px solid rgb(45, 57, 69);
-    width: 290px;
-    margin-top: 4px;
-}
-
-header h2 {
+.top {
     text-transform: uppercase;
     background-color:rgb(45, 57, 69);
     color: #fff;
@@ -36,6 +24,23 @@ header h2 {
     font-weight: 900;
     margin-top: 0;
 }
+header {
+    width: 95%;
+    margin: auto;
+}
+
+.hr1 {
+    border: 2px solid rgb(45, 57, 69);
+    /* width: 290px; */
+    margin-bottom: 4px;
+}
+
+.hr2 {
+    border: 1px solid rgb(45, 57, 69);
+    /* width: 290px; */
+    margin-top: 4px;
+}
+
 
 header h3 {
     font-weight: 800;
@@ -56,13 +61,6 @@ header p {
 /*********************************
 Form - Contact Info Section
 **********************************/
-
-.form-top {
-    display: flex;
-    flex-direction: column;
-    /* width: 85%; */
-    margin: auto;
-}
 
 fieldset {
     width: 100%;
@@ -103,6 +101,11 @@ input[type="tel"]::placeholder {
 
 }
 
+textarea::placeholder {
+    font-style: italic;
+    color: rgb(179, 184, 187);
+}
+
 /******************************
 Form - Newsletter Section
 ******************************/
@@ -110,7 +113,6 @@ Form - Newsletter Section
     display: flex;
     flex-direction: column;
     margin: auto;
-    justify-content: flex-end;
 }
 
 
@@ -120,13 +122,13 @@ input[type="checkbox"] {
   /* display: inline-block; */
 
 }
-
-input[type="radio"] {
-    margin-bottom: 10px;
+.label-margin {
+    margin-top: 20px;
 }
 
 textarea {
     height: 100px;
+    margin-top: 12px;
 }
 
 button {
@@ -145,4 +147,23 @@ button {
     text-align: center;
     color: #adadad;
     font-size: 12px;
+}
+
+/*******************************
+Media width breakpoints  
+********************************/
+
+@media (min-width: 1024px) {
+
+    header {
+        width: 52%;
+        margin: auto;
+    }
+
+    form {
+        width: 52%;
+        margin: auto;
+    }
+
+
 }

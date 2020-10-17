@@ -10,31 +10,41 @@
     <title>Code Review - Newsletter</title>
 </head>
 <body>
-    <header>
-      <h2>The Code Review</h2>
-      <h3>Sign up for our newsletter.</h2>
-      <p>Get the latest news on how your code is doing right to your inbox.</p> 
-      <hr class="hr1">
-      <hr class="hr2">
-    </header>
+  <h2 class="top">The Code Review</h2>
+
+  <header>
+    <h3>Sign up for our newsletter.</h3>
+    <p>Get the latest news on how your code is doing right to your inbox.</p> 
+    <hr class="hr1">
+    <hr class="hr2">
+  </header>
 
     <main>
       
-      
-        <form>
-          <fieldset>
-          <legend>Contact Information</legend>
-          <div class="form-top"></div>
+      <form>
+        <fieldset>
+        <legend>Contact Information</legend>
+          <div class="flex-pair">
             <label for="name">Full Name</label>
             <input required id="name" name="user_name" type="text" placeholder="Required">
+          </div>
+          <div class="flex-pair">
             <label for="email">Email Address</label>
             <input required id="email" name="user_email" type="email" placeholder="Required">
+          </div>
+          <div class="flex-pair">
             <label for="phone">Phone Number</label>
             <input id="phone" name="user_phone" type="tel">
+          </div>
+          <div class="flex-pair">
             <label for="address">Street Address</label>
             <input id="address" name="user_address" type="text">
+          </div>
+          <div class="flex-pair">
             <label for="city">City</label>
             <input id="city" name="user_city" type="text">
+          </div>
+          <div class="flex-pair">
             <label  for="state">State</label>
             <select id="state" name="user_state">
                 <option value="Choose">Choose State</option>
@@ -89,42 +99,43 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
               </select>
+            </div>
+            <div class="flex-pair">
               <label for="zip">Zip Code</label>
               <input id="zip" name="user_zip" type="text">
-              <hr class="hr2">
             </div>
-            </fieldset>
-      
-            <fieldset>
-              <legend>Newsletter</legend>
-                <div class="form-bottom">
-                  <p>Select the newsletters you'd like to receive:</p>
-                    <label for="html_news"><input type="checkbox" id="html_news" name="newsChoose" value="HTML-News" checked="true">HTML News</label>
+            <hr class="hr2">
+          </fieldset>
+    
+          <fieldset>
+            <legend>Newsletter</legend>
+              <div class="form-bottom">
+                <p>Select the newsletters you'd like to receive:</p>
+                  <label for="html_news"><input type="checkbox" id="html_news" name="newsChoose" value="HTML-News" checked>HTML News</label>
 
-                    <label for="css_news"><input type="checkbox" id="css_news" name="newsChoose" value="CSS-News">CSS News</label>
+                  <label for="css_news"><input type="checkbox" id="css_news" name="newsChoose" value="CSS-News">CSS News</label>
 
-                    <label for="js_news"><input type="checkbox" id="js_news" name="newsChoose" value="JS-News">JavaScript News</label>
+                  <label for="js_news"><input type="checkbox" id="js_news" name="newsChoose" value="JS-News">JavaScript News</label>
 
-                  <p>Newsletter Format </p>
-                    <label for="HTML"><input type="radio" id="HTML" name="format" checked="true" value="HTML">HTML</label>
+                <p>Newsletter Format </p>
+                  <label for="HTML"><input type="radio" id="HTML" name="format" checked value="HTML">HTML</label>
 
-                    <label for="plain_text"><input type="radio" id="plain_text" name="format" value="text">Plain Text</label>
+                  <label for="plain_text"><input type="radio" id="plain_text" name="format" value="text">Plain Text</label>
 
-                    <label for="other">Other topics you'd like to hear about</label>
+                  <label for="other" class="label-margin">Other topics you'd like to hear about</label>
 
-                    <textarea id="other" name="other_comments" placeholder="Enter any additional topics you're interested in here"></textarea>
-                  
-                    <button type="submit">Sign Up</button>
+                  <textarea id="other" name="other_comments" placeholder="Enter any additional topics you're interested in here"></textarea>
+                
+                  <button type="submit">Sign Up</button>
 
-                </div>
+              </div>
 
-            </fieldset>
+          </fieldset>
 
-            <p class="copy"><em>Copyright 2020 The Code Review</em></p>
+          <p class="copy"><em>Copyright 2020 The Code Review</em></p>
 
 
-        </form>
-      </div>
+      </form>
     </main>
 </body>
 </html>
