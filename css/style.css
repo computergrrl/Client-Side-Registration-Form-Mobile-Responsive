@@ -188,4 +188,15 @@ Media width breakpoints
        margin-bottom: 30px;
     }
 
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        /* align-self: flex-start; */
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
 }
