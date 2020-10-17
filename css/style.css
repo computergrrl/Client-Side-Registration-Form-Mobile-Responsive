@@ -171,12 +171,12 @@ Media width breakpoints
 @media (min-width: 768px) {
 
     header {
-        width: 52%;
+        width: 75%;
         margin: auto;
     }
 
     form {
-        width: 52%;
+        width: 75%;
         margin: auto;
     }
 
@@ -206,7 +206,6 @@ Media width breakpoints
     textarea {
         width: 100%;
         margin-bottom: 10px;
-        /* align-self: flex-start; */
     }
 
     textarea:focus {
@@ -220,4 +219,18 @@ Media width breakpoints
 
 }
 
+
+@media (min-width: 1024px) {
+
+    header {
+        width: 52%;
+        margin: auto;
+    }
+
+    form {
+        width: 52%;
+        margin: auto;
+    }
+
+}
 
