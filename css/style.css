@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Merriweather', serif;
+    background-color: rgba(135, 160, 201, 0.1); 
 }
 
 label {
@@ -61,6 +62,10 @@ header p {
 /*********************************
 Form - Contact Info Section
 **********************************/
+form {
+    background-color: #fff;
+    padding-top: 10px;
+}
 
 fieldset {
     width: 100%;
@@ -89,6 +94,19 @@ select {
   background-color: rgb(239, 240, 241);
   color: #8a97a0;
   margin-bottom: 30px;
+  transition-duration: .6s;
+  transition-property: border, border-radius;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border: 5px inset #477ccc;
+    height: 60px;
+    border-radius: 1em;
+    outline: none;
 }
 
 input[type="text"]::placeholder,
@@ -106,6 +124,7 @@ textarea::placeholder {
     color: rgb(179, 184, 187);
 }
 
+
 /******************************
 Form - Newsletter Section
 ******************************/
@@ -115,13 +134,11 @@ Form - Newsletter Section
     margin: auto;
 }
 
-
 input[type="radio"],
 input[type="checkbox"] {
   margin: 8px;
-  /* display: inline-block; */
-
 }
+
 .label-margin {
     margin-top: 20px;
 }
@@ -132,8 +149,6 @@ textarea {
 }
 
 button {
-    /* display: block;
-    margin: auto; */
     align-self: center;
     width: 290px;
     height: 60px;
@@ -194,9 +209,16 @@ Media width breakpoints
         /* align-self: flex-start; */
     }
 
+    textarea:focus {
+        height: 120px;
+    }
+
     button {
         width: 100%;
         margin-top: 10px;
     }
 
 }
+
+/******************************TESTING**************************/
+
