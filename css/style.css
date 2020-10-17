@@ -75,7 +75,6 @@ legend {
     padding-left: 0;
 }
 
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -166,8 +165,9 @@ Media width breakpoints
         margin: auto;
     }
 
-    label {
+    #form-top label {
         width: 23%;
+        align-self: center;
     }
 
     input[type="text"],
@@ -176,6 +176,8 @@ Media width breakpoints
     textarea,
     select {
         width: 70%;
+        align-self: center;
+        margin-bottom: 0;
     }
 
     .flex-pair {
@@ -183,6 +185,7 @@ Media width breakpoints
        flex-direction: row;
        justify-content: space-between;
        align-content: center;
+       margin-bottom: 30px;
     }
 
 }
