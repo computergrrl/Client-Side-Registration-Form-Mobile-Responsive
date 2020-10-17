@@ -168,7 +168,7 @@ button {
 Media width breakpoints  
 ********************************/
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     header {
         width: 52%;
@@ -220,5 +220,4 @@ Media width breakpoints
 
 }
 
-/******************************TESTING**************************/
 
