@@ -75,6 +75,7 @@ legend {
     padding-left: 0;
 }
 
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -165,5 +166,23 @@ Media width breakpoints
         margin: auto;
     }
 
+    label {
+        width: 23%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 70%;
+    }
+
+    .flex-pair {
+       display: flex; 
+       flex-direction: row;
+       justify-content: space-between;
+       align-content: center;
+    }
 
 }
