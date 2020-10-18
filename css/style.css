@@ -213,6 +213,21 @@ Media width breakpoints
        margin-bottom: 30px;
     }
 
+    .flex-zip {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-end;
+        max-width: 56%;
+    }
+    .flex-zip label {
+        width: 65%
+    }
+    .flex-zip input {
+        /* flex-basis:  */
+        width: 25%;
+    }
+
     textarea {
         width: 100%;
         margin-bottom: 10px;
