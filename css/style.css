@@ -109,6 +109,16 @@ select:focus {
     outline: none;
 }
 
+.flex-zip {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flex-zip input {
+    width: 50%;
+}
+
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="tel"]::placeholder {
