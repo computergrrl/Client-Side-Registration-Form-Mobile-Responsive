@@ -206,14 +206,32 @@ Media width breakpoints
     }
 
     .flex-pair {
+        display: flex; 
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        margin-bottom: 30px;
+     }
+     .flex-zip {
+         display: flex;
+         flex-direction: row;
+         align-content: flex-start;
+         justify-content: flex-start;
+         margin-bottom: 30px;
+     }
+     .flex-zip input {
+         max-width: 25%;
+     }
+
+    /* .flex-pair {
        display: flex; 
        flex-direction: row;
        justify-content: space-between;
        align-content: center;
        margin-bottom: 30px;
-    }
+    } */
 
-    .flex-zip {
+    /* .flex-zip {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -224,9 +242,10 @@ Media width breakpoints
         width: 65%
     }
     .flex-zip input {
-        /* flex-basis:  */
-        width: 25%;
-    }
+        flex-basis: 
+        max-width: 35%;
+        align-self: baseline;
+    } */
 
     textarea {
         width: 100%;
