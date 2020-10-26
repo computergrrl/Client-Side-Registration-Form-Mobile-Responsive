@@ -35,4 +35,4 @@ Contact: amber.stevens@teamtreehouse.com
 * CSS
 * HTML
 
-_Copyright (c) 2020 Amber Stevens_
+_Copyright (c) 2020 (The Year of the Covid) Amber Stevens_
